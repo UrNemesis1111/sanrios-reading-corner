@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sanrio's Reading Corner</title>
+</head>
+
+<body>
+    <!-- Header with Title and Light/Dark Mode Toggle -->
+    <div class="header">
+        <h1>🎀 Sanrio's Reading Corner</h1>
+        <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Navigation with Genre Filter Buttons -->
+    <div class="nav">
+        <div class="genre-filter">
+            <button class="filter-button keroppi active" data-genre="all">✨ All Genres</button>
+            <button class="filter-button myMelody" data-genre="romance">💖 Romance</button>
+            <button class="filter-button cinna" data-genre="fantasy">☁️ Fantasy</button>
+            <button class="filter-button kuromi" data-genre="supernatural">👻 Supernatural</button>
+            <button class="filter-button purin" data-genre="historical">📜 Historical</button>
+            <button class="filter-button hellokitty" data-genre="mystery">🔍 Mystery</button>
+        </div>
+    </div>
+
+    <div class="introduction">
+        <header>Sanrio's Storybook Collection</header>
+    </div>
+
+    <!-- Storybooks Grid Container -->
+    <div class="storybooks">
+
+        <!-- Book 1: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/olympusAcademy.jpg" alt="Olympus Academy">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Olympus Academy</h3>
+                    <h5>Author: mahriyumm</h5>
+                </div>
+                <p class="synopsis">
+                    ◤ SEMIDEUS SAGA #01 ◢ Semideus - demigod, a half-immortal child of a God or Goddess. Abigail Young
+                    is a student recently expelled from her previous school.
+                    <span class="more-text"> It only took a day for her world to change...</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1436</span> Likes
+                    </button>
+                    <a href="story_olympusAcademy.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 2: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/dispareo.jpg" alt="DISPAREO">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>DISPAREO</h3>
+                    <h5>Author: Serialsleeper</h5>
+                </div>
+                <p class="synopsis">
+                    "Hindi kami nawawala, Cielo! Nagtatago kami dahil kami na lang ang natitirang buhay! Patay na silang
+                    lahat sa taas!..."
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1401</span> Likes
+                    </button>
+                    <a href="story_dispareo.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 3: Historical -->
+        <article class="historical book-card" data-genre="historical">
+            <div class="genre-tag historical-tag">Historical</div>
+            <div class="historical-image">
+                <img src="image/I Love You Since 1892.jpg" alt="I Love You Since 1892">
+            </div>
+            <div class="story-content">
+                <div class="historical-info">
+                    <h3>I Love You Since 1892</h3>
+                    <h5>Author: UndeniablyGorgeous</h5>
+                </div>
+                <p class="synopsis">
+                    Hindi intensiyon ni Carmela Isabella ang umibig, lalo na sa taong 1892. Mula sa taong 2016 ay
+                    mapupunta siya sa nakaraan...
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">4104</span> Likes
+                    </button>
+                    <a href="story_ilys1892.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 4: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/hunyango.jpg" alt="Hunyango">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>Hunyango</h3>
+                    <h5>Author: Serialsleeper</h5>
+                </div>
+                <p class="synopsis">
+                    Sampu silang umalis, sampu rin silang bumalik. Ang hindi nila alam, isa sa kanila ang naiwan. Sino
+                    ang nagbabalatkayo? Sino ang hunyango?
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">8011</span> Likes
+                    </button>
+                    <a href="story_hunyango.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 5: Romance -->
+        <article class="romance book-card" data-genre="romance">
+            <div class="genre-tag romance-tag">Romance</div>
+            <div class="romance-image">
+                <img src="image/The Prince Who Stole My Glass Slippers.jpg" alt="The Prince Who Stole My Glass Slippers">
+            </div>
+            <div class="story-content">
+                <div class="romance-info">
+                    <h3>The Prince Who Stole My Glass Slippers (Prince#1)</h3>
+                    <h5>Author: VentreCanard</h5>
+                </div>
+                <p class="synopsis">
+                    In fairy tale, it is always the prince who will bring back your missing slipper... But what happened
+                    to my prince?
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">5050</span> Likes
+                    </button>
+                    <a href="story_prince1.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 6: Romance -->
+        <article class="romance book-card" data-genre="romance">
+            <div class="genre-tag romance-tag">Romance</div>
+            <div class="romance-image">
+                <img src="image/The Prince Who Pricked His Finger On The Spindle of a Spinning Wheel.jpg"
+                    alt="The Prince Who Pricked His Finger">
+            </div>
+            <div class="story-content">
+                <div class="romance-info">
+                    <h3>The Prince Who Pricked His Finger On The Spindle of a Spinning Wheel (Prince#2)</h3>
+                    <h5>Author: VentreCanard</h5>
+                </div>
+                <p class="synopsis">
+                    In fairy tale, the spinning wheel made the princess fall into her deep sleep... But mine was a
+                    different kind of story!
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1111</span> Likes
+                    </button>
+                    <a href="story_prince2.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 7: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/The Last Elysian Oracle.jpg" alt="The Last Elysian Oracle">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>The Last Elysian Oracle</h3>
+                    <h5>Author: mahriyumm</h5>
+                </div>
+                <p class="synopsis">
+                    ◤ SEMIDEUS SAGA #02 ◢ Elysian Oracle - the oracle of Elysium, the highest oracle of the realms.
+                    <span class="more-text"> The Alphas know it isn't over. The Gods are constantly up on their sleeves,
+                        giving them missions...</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">2007</span> Likes
+                    </button>
+                    <a href="story_theLastElysianOracle.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 8: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/Casa Inferno (The heart's home).jpg" alt="Casa Inferno">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>Casa Inferno (The heart's home)</h3>
+                    <h5>Author: JFstories</h5>
+                </div>
+                <p class="synopsis">
+                    "...and the devil fell in love with you, the way he loves hell."
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1879</span> Likes
+                    </button>
+                    <a href="story_casaInferno.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 9: Historical -->
+        <article class="historical book-card" data-genre="historical">
+            <div class="genre-tag historical-tag">Historical</div>
+            <div class="historical-image">
+                <img src="image/Bride of Alfonso.jpg" alt="Bride of Alfonso">
+            </div>
+            <div class="story-content">
+                <div class="historical-info">
+                    <h3>Bride of Alfonso</h3>
+                    <h5>Author: UndeniablyGorgeous</h5>
+                </div>
+                <p class="synopsis">
+                    Sa loob ng labinlimang taon, ang makasal sa kababata niyang si Enrique Alfonso ang tanging
+                    pinapangarap ni Estella Concepcion...
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">2526</span> Likes
+                    </button>
+                    <a href="story_brideOfAlfonso.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 10: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Alpha Omega.jpg" alt="Alpha Omega">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Alpha Omega</h3>
+                    <h5>Author: mahriyumm</h5>
+                </div>
+                <p class="synopsis">
+                    ◤ SEMIDEUS SAGA #03 ◢ Alpha Omega - refers to the twelve demigods destined for the upcoming
+                    rebellion.
+                    <span class="more-text"> The world has changed. Time has stopped and everyone knows that the
+                        demigods are on for a war against the rebels.</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1107</span> Likes
+                    </button>
+                    <a href="story_alphaOmega.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 11: Historical -->
+        <article class="historical book-card" data-genre="historical">
+            <div class="genre-tag historical-tag">Historical</div>
+            <div class="historical-image">
+                <img src="image/Salamisim.jpg" alt="Salamisim">
+            </div>
+            <div class="story-content">
+                <div class="historical-info">
+                    <h3>Salamisim</h3>
+                    <h5>Author: UndeniablyGorgeous</h5>
+                </div>
+                <p class="synopsis">
+                    Natuklasan ni Faye na nagagawa niyang makapasok sa kuwento na kaniyang isinulat. Ang kaniyang
+                    nobelang Salamisim ay tungkol sa pagmamahalan ng isang dalaga...
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">3333</span> Likes
+                    </button>
+                    <a href="story_salamisim.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 12: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Tantei High (Erityian Tribes 1).jpg" alt="Tantei High">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Tantei High (Erityian Tribes, #1)</h3>
+                    <h5>Author: purpleyhan</h5>
+                </div>
+                <p class="synopsis">
+                    Infamous as a latecomer, Rainie found herself expelled from her current school due to her
+                    unpunctuality...
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6214</span> Likes
+                    </button>
+                    <a href="story_tanteiHigh.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 13: Romance -->
+        <article class="romance book-card" data-genre="romance">
+            <div class="genre-tag romance-tag">Romance</div>
+            <div class="romance-image">
+                <img src="image/Stay awake, Agatha.jpg" alt="Stay awake, Agatha">
+            </div>
+            <div class="story-content">
+                <div class="romance-info">
+                    <h3>Stay awake, Agatha</h3>
+                    <h5>Author: Serialsleeper</h5>
+                </div>
+                <p class="synopsis">
+                    Agatha suffers from a rare disorder that makes her sleep in a long period of time. But what happens
+                    when the modern-day sleeping beauty meets an idiotic guy?
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1967</span> Likes
+                    </button>
+                    <a href="story_stayAwakeAgatha.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 14: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/Here comes Dondy.jpg" alt="Here comes Dondy">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>Here comes Dondy</h3>
+                    <h5>Author: Serialsleeper</h5>
+                </div>
+                <p class="synopsis">
+                    "Last year he was buried. last week he appeared. Last night he was seen. Today he began to kill.
+                    Here comes Dondy and he's coming for you."
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6002</span> Likes
+                    </button>
+                    <a href="story_hereComesDondy.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 15: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Oh My Ice Goddess (Erityian Tribes 3).jpg" alt="Oh My Ice Goddess">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Oh My Ice Goddess (Erityian Tribes 3)</h3>
+                    <h5>Author: purpleyhan</h5>
+                </div>
+                <p class="synopsis">
+                    Krystal was out for revenge. She had been alone since the tragedy that stole everything from her and
+                    she spent her whole life trying to get back...
+                    <span class="more-text"> And Krystal might finally get that chance in the War of best, battle royale
+                        among many gangs of the Black Division.</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1783</span> Likes
+                    </button>
+                    <a href="story_iceGoddess.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 16: Mystery -->
+        <article class="mystery book-card" data-genre="mystery">
+            <div class="genre-tag mystery-tag">Mystery</div>
+            <div class="mystery-image">
+                <img src="image/Salakay.jpg" alt="Salakay">
+            </div>
+            <div class="story-content">
+                <div class="mystery-info">
+                    <h3>Salakay</h3>
+                    <h5>Author: Serialsleeper</h5>
+                </div>
+                <p class="synopsis">
+                    Isang marangyang subdivision ang sinalakay ng isang bandidong grupo at nakasalalay sa isang anak ang kaligtasayan ng
+                    kanyang pamilya. 
+                    <span class="more-text"> Hanggang saan ang kaya niyang gawin ma-protektahan lang ang kanyang pamilya? </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon"> 🤍 </span>
+                        <span class="like-count">1352</span> Likes
+                    </button>
+                    <a href="story_salakay.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 17: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/Alphabet of Death.jpg" alt="Alphabet of Death">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>Alphabet of Death</h3>
+                    <h5>Author: risingservant</h5>
+                </div>
+                <p class="synopsis">
+                    Handa ka na bang harapin ang iyong kamatayan sa pamamagitan ng letrang iyong pinangangalagaan?
+                    
+                    Mag-ingat ka dahil ang letrang pinanghahawakan mo ay ang magiging sanhi ng kamatayan mo.
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6621</span> Likes
+                    </button>
+                    <a href="story_alphabetOfDeath.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 18: Historical -->
+        <article class="historical book-card" data-genre="historical">
+            <div class="genre-tag historical-tag">Historical</div>
+            <div class="historical-image">
+                <img src="image/Our Asymptotic Love Story.jpg" alt="Our Asymptotic Love Story">
+            </div>
+            <div class="story-content">
+                <div class="historical-info">
+                    <h3>Our Asymptotic Love Story</h3>
+                    <h5>Author: UndeniablyGorgeous</h5>
+                </div>
+                <p class="synopsis">
+                    Prequel of "I Love You since 1892"
+                    
+                    Pilit hinahanap ni Aleeza ang mga kasagutan sa mga kakaibang panaginip at pakiramdam na nararanasan niya sa tuwing
+                    bumubuhos ang ulan at sa tuwing nakikita  
+                    <span class="more-text"> niya ang estrangherong naghahatid ng magkahalong saya at lungkot sa kanyang
+                    puso: si Nathan. Magagawa kaya nilang maitama ang pagkakamali ng nakaraan upang maiwasan ang trahedyang dulot ng bawal na pag-ibig na
+                    nagsimula pa noong una at nagpapatuloy kahit ilang siglo na ang nakalipas? O hanggang sa panahon bang ito ay hindi pa
+                    rin nila mababago ang nakasulat sa kanilang kapalaran?
+                    
+                    A story that will look back from its past and present. Will the lines connect them for the second time around? or Will
+                    history repeats itself? </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">1055</span> Likes
+                    </button>
+                    <a href="story_ourAsymptoticLoveStory.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 19: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Lucid Dream.jpg" alt="Lucid Dream">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Lucid Dream</h3>
+                    <h5>Author: alyloony</h5>
+                </div>
+                <p class="synopsis">
+                    Merong iba't-ibang paraan ang mga tao para makatakas sa reyalidad.
+                    Yung iba nagbabasa ng libro, nanonood ng mga drama sa tv, nakikinig ng music. 
+                    <span class="more-text"> Meron namang nagsusulat, nag d-drawing,
+                    nag p-paint, at nag co-compose ng kanta.
+                    
+                    Pero si Angelique, ang paraan niya ng pagtakas sa reyalidad ay tuwing nananaginip siya. Dahil meron siyang ibang
+                    kakayahan.
+                    
+                    Ang kakayahan na kontrolin at i-manipulate ang sarili niyang panaginip.
+                </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">2359</span> Likes
+                    </button>
+                    <a href="story_lucidDream.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 20: Supernatural -->
+        <article class="supernatural book-card" data-genre="supernatural">
+            <div class="genre-tag supernatural-tag">Supernatural</div>
+            <div class="supernatural-image">
+                <img src="image/I Love You, ARA.jpg" alt="I Love You, ARA">
+            </div>
+            <div class="story-content">
+                <div class="supernatural-info">
+                    <h3>I Love You, ARA</h3>
+                    <h5>Author: JFstories</h5>
+                </div>
+                <p class="synopsis">
+                    Based on true story. A psychological Romance-Horror-Paranormal novel by Jamille Fumah. Please read with caution.
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6149</span> Likes
+                    </button>
+                    <a href="story_ilyARA.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 21: Mystery -->
+        <article class="mystery book-card" data-genre="mystery">
+            <div class="genre-tag mystery-tag">Mystery</div>
+            <div class="mystery-image">
+                <img src="image/Project LOKI 2.jpg" alt="Project LOKI 2">
+            </div>
+            <div class="story-content">
+                <div class="mystery-info">
+                    <h3>Project LOKI 2</h3>
+                    <h5>Author: AkoSiIbarra</h5>
+                </div>
+                <p class="synopsis">
+                    The adventures of the QED Club continue as the Moriarty mystery thickens.
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon"> 🤍 </span>
+                        <span class="like-count">1406</span> Likes
+                    </button>
+                    <a href="story_projectLoki2.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 22: Mystery -->
+        <article class="mystery book-card" data-genre="mystery">
+            <div class="genre-tag mystery-tag">Mystery</div>
+            <div class="mystery-image">
+                <img src="image/Project LOKI 3.jpg" alt="Project LOKI 3">
+            </div>
+            <div class="story-content">
+                <div class="mystery-info">
+                    <h3>Project LOKI 3</h3>
+                    <h5>Author: AkoSiIbarra</h5>
+                </div>
+                <p class="synopsis">
+                    The third and final volume of Project LOKI. Join Lorelei, Loki, Jamie, and Alistair as they bring down Moriarty's
+                    organization.
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon"> 🤍 </span>
+                        <span class="like-count">5022</span> Likes
+                    </button>
+                    <a href="story_projectLoki3.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 23: Romance -->
+        <article class="romance book-card" data-genre="romance">
+            <div class="genre-tag romance-tag">Romance</div>
+            <div class="romance-image">
+                <img src="image/The Jerk is a Ghost.jpg" alt="The Jerk is a Ghost">
+            </div>
+            <div class="story-content">
+                <div class="romance-info">
+                    <h3>The Jerk is a Ghost</h3>
+                    <h5>Author: april_avery</h5>
+                </div>
+                <p class="synopsis">
+                    Sikat siya at hindi ka niya kilala. Kaya bakit sa dami ng taong nakapaligid sa kanya, ikaw na walang kamalay malay ang
+                    minumulto niya?
+                    
+                    THE JERK IS A GHOST.
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6777</span> Likes
+                    </button>
+                    <a href="story_theJerkIsAGhost.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 24: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Seventh Sense (Erityian Tribes 2).jpg" alt="Seventh Sense (Erityian Tribes 2)">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Seventh Sense (Erityian Tribes 2)</h3>
+                    <h5>Author: purpleyhan</h5>
+                </div>
+                <p class="synopsis">
+                    As the next head of the Shinigami tribe, Rielle was given a mission to infiltrate their archenemy's base, Tantei High,
+                    <span class="more-text"> in search of any information about the legendary seventh sense. Her animosity toward the Senshins made it hard for her
+                    to get closer to her goal, and worse, Hideo, the heir to the Senshin's tribe seat of power, had already deemed Rielle
+                    suspicious.
+                    
+                    But as she spent more time with the Senshins, she had began questioning the beliefs and principles she had adhered to
+                    for a long time. Trapped between her responsibility as an heir, and her personal feelings, Rielle must choose the side
+                    she'd stay with.
+                    </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">8329</span> Likes
+                    </button>
+                    <a href="story_seventhSense.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 25: Romance -->
+        <article class="romance book-card" data-genre="romance">
+            <div class="genre-tag romance-tag">Romance</div>
+            <div class="romance-image">
+                <img src="image/The Prince Who Bit The Poisonous Apple.jpg" alt="The Prince Who Bit The Poisonous Apple">
+            </div>
+            <div class="story-content">
+                <div class="romance-info">
+                    <h3>The Prince Who Bit The Poisonous Apple</h3>
+                    <h5>Author: VentreCanard</h5>
+                </div>
+                <p class="synopsis">
+                    In fairy tale, it is the prince who would go all the way with all his might to fight against the enchanted apple. 
+                    <span class="more-text"> And
+                    his kiss will awaken the sleeping princess waiting for his rescue. But what happened to my prince? Eating the poisonous
+                    apple, falling himself to deep sleep...
+                    </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">5523</span> Likes
+                    </button>
+                    <a href="story_prince3.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Book 26: Historical -->
+        <article class="historical book-card" data-genre="historical">
+            <div class="genre-tag historical-tag">Historical</div>
+            <div class="historical-image">
+                <img src="image/El Gobernador General De Mi Corazón.jpg" alt="El Gobernador General De Mi Corazón">
+            </div>
+            <div class="story-content">
+                <div class="historical-info">
+                    <h3>El Gobernador General De Mi Corazón</h3>
+                    <h5>Author: Senyorita Maria</h5>
+                </div>
+                <p class="synopsis">
+                    Dahil sa isang pagkakamali, out of nowhere ay bumalik sa taong 1855 si Choleng. Nalayo man nang tuluyan sa pamilya 
+                    <span class="more-text"> ay
+                    hindi naman niya inasahang makikilala ang mga taong may kanya-kanyang dinadalang pighati sa kani-kanilang puso ang
+                    magpapagulo at magpapasakit nang bonggang-bongga sa kanyang ulo. Maghihilom pa ba ang mga pusong minarkahan ng pagkamuhi
+                    at hinanakit? May pag-asa pa nga bang muling mabuo ang mga nagkapira-pirasong pagsasama na winasak ng salapi,
+                    kapangyarihan, pag-ibig, at mga ibinaong lihim?
+                    
+                    Samahan si Choleng na tuklasin ang katotohanan sa kanyang paglalakbay pabalik sa nakaraan. Alin nga ba ang dapat niyang
+                    paniwalaan? Ang banta ng kanyang pangitain? O, ang banta ng nagbabalat-kayong katotohanan? </span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">6014</span> Likes
+                    </button>
+                    <a href="story_elGobernador.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 27: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Song of The Rebellion.jpg" alt="Song of The Rebellion">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Song of The Rebellion</h3>
+                    <h5>Author: mahriyumm</h5>
+                </div>
+                <p class="synopsis">
+                    ◤ SEMIDEUS SAGA #04 ◢
+                    
+                    Promise of the Twelve - End of the rebellion as prophecied by the titan goddess, Mnemosyne.
+                    
+                    
+                    It seems like fighting a titan is not enough.
+                    <span class="more-text"> From the ends of the world, our heroes will each have to use their unique
+                    abilities to stop the rebellion and prevent Cronus' awakening.
+                    
+                    The Alphas are the Omegas.
+                    
+                    One by one, they will learn of their destiny. And for them, this is all about what the rebellion will bring to the
+                    mortal realms. Their primary mission as children of the Olympians is to protect the world, afterall.
+                    
+                    
+                    Olympus Academy. The Elysian Oracle. The Prophecies of Rhea. The Promise of Mnemosyne. Alpha Omega.
+                    
+                    All these lead to the Rebellion.
+                    
+                    But which one is the key?
+                    
+                    Or rather...
+                    
+                    
+                    Who holds it?</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">5555</span> Likes
+                    </button>
+                    <a href="story_songOfTheRebellion.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Book 27: Fantasy -->
+        <article class="fantasy book-card" data-genre="fantasy">
+            <div class="genre-tag fantasy-tag">Fantasy</div>
+            <div class="fantasy-image">
+                <img src="image/Oculus of Time.jpg" alt="Oculus of Time">
+            </div>
+            <div class="story-content">
+                <div class="fantasy-info">
+                    <h3>Oculus of Time</h3>
+                    <h5>Author: mahriyumm</h5>
+                </div>
+                <p class="synopsis">
+                    After the rebellion, the Olympians remain seated on their thrones and all the realms have recovered from the tragedy.
+                    
+                    <span class="more-text">The Gods and Goddesses are back in their domains, order is restored, and time has never stopped since then.
+                        The Rebellion is finished.
+                    
+                    but the demigods who ended it are not...
+                    
+                    for they have yet to face the consequences of the rebellion.
+                    
+                    
+                    Matilda, an Omega, and the renowned Elysian oracle, has gone missing for half a month and not even the souls in Elysium
+                    know where she is.
+                    
+                    Determined to figure out why and how she disappeared, the Alphas set for another mission to search for her by seeking
+                    the help of the Moirai, the godesses of fate, who only had one thing to say:
+                    
+                    For them to be able to find her,
+                    
+                    they must find themselves first.</span>
+                    <strong class="read-more-btn">... Read More</strong>
+                </p>
+                <div class="card-footer-actions">
+                    <button class="like-btn">
+                        <span class="heart-icon">🤍</span>
+                        <span class="like-count">7011</span> Likes
+                    </button>
+                    <a href="story_oculusTime.html" class="read-btn">Read story</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; All rights reserved. Made with Sanrio Magic 💖</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

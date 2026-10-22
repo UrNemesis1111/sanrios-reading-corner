@@ -1,0 +1,403 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Color Variables for Light and Dark Sanrio Themes */
+:root {
+    --bg-color: #fff9fb;
+    --text-color: #4a3b4c;
+    --card-bg: #ffffff;
+    --header-bg: #ffffff;
+    --border-pink: #ffb7c5;
+    --border-blue: #c1f0f6;
+    --border-purple: #d491e0;
+    --shadow-color: rgba(255, 183, 197, 0.3);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #2b232e;
+    --text-color: #f3e8f5;
+    --card-bg: #3a303e;
+    --header-bg: #322836;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Bubblegum Sans', 'Quicksand', 'Nunito', cursive, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Header Styling */
+.header {
+    color: #ff7597;
+    background-color: var(--header-bg);
+    padding: 15px 20px;
+    border-bottom: 4px solid var(--border-pink);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* Dark Mode Button */
+.theme-btn {
+    background-color: #fff176;
+    border: 2px solid #ffd54f;
+    color: #4a3b4c;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn:hover {
+    transform: scale(1.05);
+}
+
+.introduction {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+/* Nav Container */
+.nav {
+    color: var(--text-color);
+    background-color: var(--card-bg);
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 15px;
+    border: 4px solid var(--border-blue);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* Filter Buttons */
+.genre-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-button {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.filter-button:hover,
+.filter-button.active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.keroppi {
+    background-color: #78db36;
+    border: 2px solid #76d337;
+    color: #ffffff;
+}
+
+.purin {
+    background-color: #fff176;
+    border: 2px solid #ffef61;
+    color: #4a3b4c;
+}
+
+.cinna {
+    background-color: #b2ebf2;
+    border: 2px solid #9ce0e9;
+    color: #1a525d;
+}
+
+.myMelody {
+    background-color: #ff85a2;
+    border: 2px solid #fc6488;
+    color: #ffffff;
+}
+
+.kuromi {
+    background-color: #e1bee7;
+    border: 2px solid #d491e0;
+    color: #4a148c;
+}
+
+.hellokitty {
+    background-color: #ED164F;
+    border: 2px solid #B01455;
+    color: #FCFDFF;
+}
+
+/* Grid Layout for Storybook Cards */
+.storybooks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* Card General Styling */
+.book-card {
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 15px var(--shadow-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Category Specific Borders */
+.fantasy {
+    border: 4px solid #9ce0e9;
+}
+
+.supernatural {
+    border: 4px solid #d491e0;
+}
+
+.romance {
+    border: 4px solid #fc6488;
+}
+
+.historical {
+    border: 4px solid #fff176;
+}
+
+.mystery {
+    border: 4px solid #ED164F;
+}
+
+/* Card Image Section */
+.fantasy-image,
+.supernatural-image,
+.romance-image,
+.historical-image,
+.mystery-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fantasy-image img,
+.supernatural-image img,
+.romance-image img,
+.historical-image img,
+.mystery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Genre Badge Overlay */
+.genre-tag {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+}
+
+.fantasy-tag {
+    background-color: #4dd0e1;
+}
+
+.supernatural-tag {
+    background-color: #ba68c8;
+}
+
+.romance-tag {
+    background-color: #ff4081;
+}
+
+.historical-tag {
+    background-color: #ffd54f;
+    color: #4a3b4c;
+}
+
+.mystery-tag {
+    background-color: #B01455;
+}
+
+/* Story Content Text */
+.story-content {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.story-content h3, h5, p {
+    text-align: center;
+}
+
+.chapter-text {
+    margin: 10px;
+    line-height: 1.8;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.more-text {
+    display: none;
+}
+
+.more-text.show {
+    display: inline;
+}
+
+.fantasy-info h3, 
+.fantasy-info h5 {
+    color: #26c6da;
+}
+
+.romance-info h3, 
+.romance-info h5 {
+    color: #ff7597;
+}
+
+.supernatural-info h3, 
+.supernatural-info h5 {
+    color: #ba68c8;
+}
+
+.historical-info h3, 
+.historical-info h5 {
+    color: #fbc02d;
+}
+
+.mystery-info h3, 
+.mystery-info h5 {
+    color: #ED164F;
+}
+
+.story-content h3 {
+    font-size: 20px;
+}
+
+.story-content h5 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.synopsis {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* Interactive Card Buttons */
+.card-footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-pink);
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 4px 8px;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+}
+
+.like-btn:hover {
+    background-color: rgba(255, 117, 151, 0.15);
+}
+
+.like-btn.liked {
+    color: #ff4081;
+}
+
+.read-btn {
+    background-color: #ff85a2;
+    color: white !important;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-btn:hover {
+    background-color: #fc6488;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.4);
+}
+
+.read-more-btn {
+    font-weight: bold;
+    color: #ff85a2;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.read-more-btn:hover {
+    color: #fc6488;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
